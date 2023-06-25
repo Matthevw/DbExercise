@@ -1,0 +1,14 @@
+{
+    "m2m_db_exercise": {
+        "column": {
+            "id": true,
+            "sku": true,
+            "name": true,
+            "price": true,
+            "custom_data": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}

@@ -1,0 +1,30 @@
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+
+    <table name="m2m_db_exercise" resource="default" engine="innodb" comment="Catalog Product Datetime Attribute Backend Table">
+
+        <column xsi:type="int" name="id" nullable="false" identity="true" comment="ID" unsigned="true"/>
+        <column xsi:type="text" name="sku" nullable="false" comment="SKU"/>
+        <column xsi:type="text" name="name" nullable="false" comment="Name"/>
+        <column xsi:type="text" name="price" nullable="false" comment="Price"/>
+        <column xsi:type="text" name="custom_data" nullable="false" comment="Custom data"/>
+
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="id"/>
+        </constraint>
+
+    </table>
+
+</schema>
+
+<!-- 
+default     Initializes the column with the specified default value. The default value should have the same datatype defined in xsi:type.
+disabled	Disables or deletes the declared table, column, constraint, or index.
+identity	Indicates whether a column is auto incremented.
+length	    Specifies the length of a column. Can be used for char, varchar, and varbinary types.
+nullable	Indicates whether column can be nullable.
+onCreate	This is a DDL trigger that allows you to move data from an existing column to a newly created column. This trigger works only when a column is created.
+padding	    The size of an integer column.
+precision	The number of allowed digits in a real data type.
+scale	    The number of digits after the decimal in a real data type.
+unsigned	For numeric data types, specifies whether the column can contain positive and negative values or only positive values. 
+-->
