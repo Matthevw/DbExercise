@@ -52,7 +52,7 @@ class DbExercise
     public function getDbCollection()
     {
         $collection = $this->dbExerciseCollection->create()->getData();
-        var_dump($collection); die;
+        var_dump($collection);
     }
 
 }

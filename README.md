@@ -1,1 +1,2 @@
 # DbExercise
+This module creates custom table in the database and saves there example data using Model and Resource Model. This exercise, also shows the currently entered data in this database using Collection.
